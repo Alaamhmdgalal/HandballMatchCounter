@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinnerScreen">
+
+    <ImageView
+        android:id="@+id/trophy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trophy"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A "
+        android:textSize="28sp"
+        android:textColor="#F86707"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/winner_team"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trophy" />
+
+    <TextView
+        android:id="@+id/winner_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="is the winner"
+        android:textSize="28sp"
+        android:textColor="#F86707"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/team_name"
+        app:layout_constraintTop_toBottomOf="@+id/trophy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
